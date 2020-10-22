@@ -41,7 +41,7 @@
 			</section>
 
 			<section>
-				<h3>Choose Fileds</h3>
+				<h3>I. Choose your Fields</h3>
 				<div style="font-size: 32px; font-family: JetBrains Mono;">
 					<ul>
 						<li>Machine Learning</li>
@@ -65,6 +65,8 @@
 					<li>Video: <a href="https://www.bilibili.com/video/BV164411b7dx?from=search&seid=7948391943814616469">Andrew Ng Machine Learning</a>
 					</li>
 					<li>Frameworks: <a href="https://github.com/tensorflow/tensorflow">tensorflow</a>, <a href="https://github.com/pytorch/pytorch">pytorch</a></li>
+					<li>Computer vision: OpenCV(cv2), YOLOv3</li>
+					<li>Not only Python (Maybe JS or Rust?)</li>
 				</ul></div>
 			</section>
 
@@ -174,7 +176,7 @@
 						<li> SICP (MIT 6.001) and Computer Magic</li>
 						<li>Functional programming: Haskell, Elixir, λ-calculus...</li>
 						<li>Formal Proof: proof assistant -> Agda, Arend...</li>
-						<li>Type Theory: HoTT, CuTT, Dependent type -> Agda, Idirs...</li>
+						<li>Type Theory: HoTT, CuTT, Dependent type -> Agda, Idris...</li>
 						<li>Implement a lisp/scheme interpreter using Haskell...</li>
 						<li>Write a C compiler using Rust -> ref: rcc</li>
 						<li>Design your own programming language</li>
@@ -182,261 +184,70 @@
 				</div>
 			</section>
 
-
-
-			<section id="transitions">
-				<h2>Transition Styles</h2>
-				<p>
-					You can select from different transitions, like: <br>
-					<a href="?transition=none#/transitions">None</a> -
-					<a href="?transition=fade#/transitions">Fade</a> -
-					<a href="?transition=slide#/transitions">Slide</a> -
-					<a href="?transition=convex#/transitions">Convex</a> -
-					<a href="?transition=concave#/transitions">Concave</a> -
-					<a href="?transition=zoom#/transitions">Zoom</a>
-				</p>
-			</section>
-
-			<section id="themes">
-				<h2>Themes</h2>
-				<p>
-					reveal.js comes with a few themes built in: <br>
-					<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
-						(default)</a> -
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
-					<br>
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
-					-
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-				</p>
-			</section>
-
 			<section>
-				<section data-background="#dddddd">
-					<h2>Slide Backgrounds</h2>
-					<p>
-						Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS
-						color formats are supported.
-					</p>
-					<a href="#" class="navigate-down">
-						<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238"
-							data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-					</a>
-				</section>
-				<section data-background="https://static.slid.es/reveal/image-placeholder.png">
-					<h2>Image Backgrounds</h2>
-					<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
-				</section>
-				<section data-background="https://static.slid.es/reveal/image-placeholder.png"
-					data-background-repeat="repeat" data-background-size="100px">
-					<h2>Tiled Backgrounds</h2>
-					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-				</section>
-				<section
-					data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4"
-					data-background-color="#000000">
-					<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-						<h2>Video Backgrounds</h2>
-						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-					</div>
-				</section>
-				<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-					<h2>... and GIFs!</h2>
-				</section>
-			</section>
-
-			<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-				<h2>Background Transitions</h2>
-				<p>
-					Different background transitions are available via the backgroundTransition option. This one's
-					called "zoom".
-				</p>
-				<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-			</section>
-
-			<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-				<h2>Background Transitions</h2>
-				<p>
-					You can override background transitions per-slide.
-				</p>
-				<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-			</section>
-
-			<section data-background-iframe="https://hakim.se" data-background-interactive>
-				<div
-					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-					<h2>Iframe Backgrounds</h2>
-					<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the
-						page in the background.</p>
-				</div>
-			</section>
-
-			<section>
-				<h2>Marvelous List</h2>
+				<h3>II. Organize Your Team</h3>
+				<div style="font-family: JetBrains Mono; font-size: 32px;">
 				<ul>
-					<li>No order here</li>
-					<li>Or here</li>
-					<li>Or here</li>
-					<li>Or here</li>
+					<li>Open Source Workflow</li>
+					<li>GitHub Project</li>
 				</ul>
+			</div>	
 			</section>
 
 			<section>
-				<h2>Fantastic Ordered List</h2>
-				<ol>
-					<li>One is smaller than...</li>
-					<li>Two is smaller than...</li>
-					<li>Three!</li>
-				</ol>
-			</section>
-
-			<section>
-				<h2>Tabular Tables</h2>
-				<table>
-					<thead>
-						<tr>
-							<th>Item</th>
-							<th>Value</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apples</td>
-							<td>$1</td>
-							<td>7</td>
-						</tr>
-						<tr>
-							<td>Lemonade</td>
-							<td>$2</td>
-							<td>18</td>
-						</tr>
-						<tr>
-							<td>Bread</td>
-							<td>$3</td>
-							<td>2</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-
-			<section>
-				<h2>Clever Quotes</h2>
-				<p>
-					These guys come in two forms, inline: <q
-						cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The
-						nice thing about standards is that there are so many to choose from</q> and block:
-				</p>
-				<blockquote
-					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-					&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of
-					typewriters would
-					reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-				</blockquote>
-			</section>
-
-			<section>
-				<h2>Intergalactic Interconnections</h2>
-				<p>
-					You can link between slides internally,
-					<a href="#/2/3">like this</a>.
-				</p>
-			</section>
-
-			<section>
-				<h2>Speaker View</h2>
-				<p>There's a <a href="https://revealjs.com/speaker-view/">speaker view</a>. It includes a timer, preview
-					of the upcoming slide as well as your speaker notes.</p>
-				<p>Press the <em>S</em> key to try it out.</p>
-
-				<aside class="notes">
-					Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you
-					open the speaker notes window (hit 's' on your keyboard).
-				</aside>
-			</section>
-
-			<section>
-				<h2>Export to PDF</h2>
-				<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an
-					example:</p>
-				<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355"
-					frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-					style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-			</section>
-
-			<section>
-				<h2>Global State</h2>
-				<p>
-					Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-					will be added as a class to the document element when the slide is open. This lets you
-					apply broader style changes, like switching the page background.
-				</p>
-			</section>
-
-			<section data-state="customevent">
-				<h2>State Events</h2>
-				<p>
-					Additionally custom events can be triggered on a per slide basis by binding to the
-					<code>data-state</code> name.
-				</p>
-				<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.on( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-			</section>
-
-			<section>
-				<h2>Take a Moment</h2>
-				<p>
-					Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and
-					want to take distracting slides off the screen.
-				</p>
-			</section>
-
-			<section>
-				<h2>Much more</h2>
+				<h3>Open Source Workflow</h3>
+				<div style="font-family: JetBrains Mono; font-size: 23px;">
 				<ul>
-					<li>Right-to-left support</li>
-					<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
-					<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
-					<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
-					<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
+					<li>Push your code to GitHub (using git)</li>
+					<li>Pull Requests / Code Review</li>
+					<li>Merge PR and work together</li>
+					<li>Assistant: QQ Group</li>
 				</ul>
+				<br />
+				<img src="./img/pr.png" alt="">
+			</div>	
 			</section>
 
-			<section style="text-align: left;">
-				<h1>THE END</h1>
-				<p>
-					- <a href="https://slides.com">Try the online editor</a> <br>
-					- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-				</p>
+			<section>
+				<h3>GitHub Project</h3>
+				<div style="font-family: JetBrains Mono; font-size: 23px;">
+				<ul>
+					<li>Manage your progress</li>
+					<li>Assign tasks to your team members</li>
+				</ul>
+				<br />
+				<img src="./img/gp.png" alt="">
+			</div>	
+			</section>
+
+			<section>
+				<h3>III. Present your ideas</h3>
+				<div style="font-family: JetBrains Mono; font-size: 32px;">
+				<ul>
+					<li>Creation and Presention</li>
+				</ul>
+			</div>	
+			</section>
+
+			<section>
+				<h3>Creation and Presention</h3>
+				<div style="font-family: JetBrains Mono; font-size: 23px;">
+				<ul>
+					<li>Everything creative: from your thoughts to the implementation...</li>
+					<li>Show it to others: module graph & flowchart</li>
+				</ul>
+				<img src="./img/m.png" alt="">
+			</div>
+			</section>
+
+			<section>
+				<h3>Thank you!</h3>
+				<div style="font-family: JetBrains Mono; font-size: 32px;">
+				<ul>
+					<li>QQ: 1051276278</li>
+					<li>https://github.com/raptazure</li>
+				</ul>
+			</div>	
 			</section>
 
 		</div>
